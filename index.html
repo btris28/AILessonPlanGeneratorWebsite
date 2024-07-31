@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>LESSON PLANNER</title>
+</head>
+<body>
+    <header class="header">
+        <nav id="desktop-nav">
+            <div class="logo">LESSON PLANNER</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about-us">About us</a></li>
+                    <li><a href="#Tutorial">Tutorial</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">LESSON PLANNER</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#about-us" onclick="toggleMenu()">About us</a></li>
+                    <li><a href="#Tutorial" onclick="toggleMenu()">Tutorial</a></li>
+                    
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="flex-container">
+         <form style="flex-grow: 2" action="box">
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Topic of Lesson:</span>
+                    <i class="example">i.e. intro to algebra, ancient civilizations in asia, the works of william shakespeare</i>
+                </div>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Grade + Age Range:</span>
+                    <i class="example">i.e. Grade 5 (ages 10-12), Grade 11 (ages 15-17)</i>
+                </div>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Duration of Lesson</span>
+                    <i class="example">i.e. 30 minutes, 1 hour, 1 hour and 5 minutes</i>
+                </div>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Custom Instructions</span>
+                    <i class="example">i.e. have roleplay reenactment as activity, include essay writing about topic,<br> include the pythogorean theorem in lesson plan</i>
+                </div>
+                <button></button>
+            </form>
+        <div class = "title">
+            <section class="description">
+                <h1>AI LESSON PLANNER</h1>
+                <p>Generate your own lesson plan in seconds!</p>
+           </section>
+        </div>
+    </div>
+
+
+ 
+
+
+     <div class="card-container">
+        <div class="about-us" id="about-us">
+            <h1>About Us</h1>
+        </div>
+        <div class="card">
+            <img src="images/bea.png">
+            <div class="card-content">
+                <h1>Beatrice Pedroche</h1>
+                <p class="original">Undergrad student studying BS in Computer Science and specializing in Artificial Intelligence at AMA Computer College Pasig.</p>
+                <span class="dots">...</span>
+                <p class="extra">She is the backend developer and AI specialist of this website. The idea of a lesson plan generator was inspired by her father who used to be a computer college professor. In five years she hopes she can get a good job and buy her own Nintendo Switch.</p>
+                <input type="checkbox" id="btn">
+                <label for="btn"></label>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image2-png.png">
+            <div class="card-content">
+                <h1>Christian Once</h1>
+                <p class="original">Undergrad student studying BS in Computer Science and specializing in Artificial Intelligence at AMA Computer College Pasig. Will someday buy her own Nintendo Switch.</p>
+                <span class="dots">...</span>
+                <p class="extra">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Possimus at similique libero odio odit fuga, repudiandae repellat
+                    atque vitae maxime voluptas officia vel ut excepturi pariatur</p>
+                <input type="checkbox" id="btn">
+                <label for="btn"></label>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image3-png.png">
+            <div class="card-content">
+                <h1>Title Three</h1>
+                <p class="original">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Possimus at similique libero odio odit fuga</p>
+                <span class="dots">...</span>
+                <p class="extra">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Possimus at similique libero odio odit fuga, repudiandae repellat
+                    atque vitae maxime voluptas officia vel ut excepturi pariatur</p>
+                <input type="checkbox" id="btn">
+                <label for="btn"></label>
+            </div>
+        </div>
+     </div>
+    
+     <div class="tutorial">
+        <div class="tutorial-title" id="Tutorial">
+            <h1>Tutorial</h1>
+        </div>
+        <div class="box">
+            <h2>STEP 1:</h2>
+            <h3>Fill in all text boxes (be as specific as you can!).</h3>
+            <img src="images/step1.png">
+        </div>
+        <div class="box">
+            <h2>STEP 2:</h2>
+            <h3>Press submit and wait for a few seconds.</h3>
+            <img src="images/step2.png">
+        </div>
+        <div class="box">
+            <h2>STEP 3:</h2>
+            <h3>Voila! Your lesson plan has been generated.</h3>
+            <img src="images/step3.png">
+        </div>
+        <div class="box">
+            <h2>STEP 4:</h2>
+            <h3>Generate again or save the lesson plan as a docx file.</h3>
+            <img src="images/step4.png">
+        </div>
+     </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -247,6 +247,7 @@ a:hover {
     font-size: 13px;
     position: absolute;
     left: 20px;
+    top: 60px;
     text-align: left;
     color:#666;
     white-space: nowrap;
@@ -258,7 +259,7 @@ a:hover {
 
 
 /*----button----*/
-button {
+.submit  {
     position: relative;
     top: 65px;
     left: 80px;
@@ -287,7 +288,9 @@ button {
     }
 }
 
-
+.submit:hover {
+    color: white;
+}
 
 
 .effect1 {
@@ -345,12 +348,14 @@ button {
 }
 
 .card {
-    width: 315px;
+    width: 300px;
+    height: 500px;
+    margin: 20px;
     background-color: #f4f4f4;
     border-radius: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.6s ease;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -358,25 +363,43 @@ button {
 }
 
 .card img {
-    width: 100%;
-    height: auto;
+    height: 500px;
     object-fit: cover;
-    
+    border-radius: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 .card-content {
-    padding: 20px;
+    height: 70px;
+    width: 300px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -690px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
 }
 
-.card-content h1 {
-    font-size: 18px;
+.card h1 {
+    font-size: 20px;
     margin-bottom: 10px;
+    left: 10px;
 }
 
 .card-content p {
     font-size: 15px;
-    color: #666;
+    color: white;
     margin-bottom: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .10s;
+    
+}
+.card-container span {
+    font-weight: bold;
 }
 
 .creator {
@@ -384,50 +407,24 @@ button {
     font-weight: 500;
 }
 
-/*.card-button {
-    display: inline-block;
-    background-color: #3498db;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    text-align: center;
-}*/
+.card .read-more {
+    color: black;
+    
+}
 
-.extra {
-    display: none;
+.card:hover .card-content {
+    height: 320px;
+    bottom: 1px;
+    background: rgb(27, 27, 27, .5);
 }
-p {
-    display: inline;
+
+.card:hover p {
+    opacity: 1;
+    visibility: visible;
 }
-input[type="checkbox"] {
-    height: 2em;
-    display: block;
-    appearance: none;
-}
-label {
-    position: relative;
-    bottom: 10px;
-    padding: 1em;
-    background-color: #3498db;
-    color: #ffffff;
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 10px 15px;
-}
-label:before {
-    content: "Read More";
-}
-input[type="checkbox"]:checked ~ label:before
-{
-    content: "Read Less";
-}
-.dots:has(~input[type="checkbox"]:checked) {
-    display: none;
-}
-.extra:has(~input[type="checkbox"]:checked) {
-    display: inline;
-}
+
+
+
 
 
 /* tutorial ------------------- */

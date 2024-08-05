@@ -377,7 +377,7 @@ a:hover {
     width: 300px;
     padding: 6px;
     box-sizing: border-box;
-    position: absolute;
+    position:fixed;
     bottom: -690px;
     background: rgb(27, 27, 27, .5);
     color: white;
